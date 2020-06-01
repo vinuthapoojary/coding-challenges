@@ -1,0 +1,44 @@
+Write a C program to sort an array of integers in ascending or descending 
+order and display the sorted array and number of passes while sorting
+#include<stdio.h>
+void swap(int*xp, int*yp)
+{
+Int temp=*xp;
+*xp=*yp;
+*yp=temp;
+}
+int bubbleSort(intarr[],intn)
+{
+int i,j,count=0;
+int swapped;
+for(i=0;i<n-1;i++)
+{
+swapped=0;
+for(j=0;j<n-i-1;j++)
+{
+if(arr[j]>arr[j+1])
+{
+swap(&arr[j],&arr[j+1]);
+swapped=1;
+count++;
+}
+}
+if(swapped==0)
+break;
+}
+return count;
+}
+void printArray(intarr[],intsize)
+{
+int i;
+for(i=0;i<size;i++)
+printf("%d",arr[i])
+printf("\n");
+}
+int main()
+{
+int arr[50],num;
+printf("enter the number of elements");
+scanf("%d",&num);
+printf("enter the elements");
+}
