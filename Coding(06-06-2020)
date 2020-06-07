@@ -1,0 +1,12 @@
+defrecur_fibo(n):
+ifn<=1:
+returnn
+else:
+return(recur_fibo(n-1)+recur_fibo(n-2))
+nterms=10
+ifnterms<=0:
+print("Pleseenterapositiveinteger")
+else:
+print("Fibonaccisequence:")
+foriinrange(nterms):
+print(recur_fibo(i))
